@@ -97,6 +97,7 @@
 }
 .body {
     padding: 10px 5%;
+    padding-bottom: 200px;
     display: flex;
 }
 .settings {
@@ -421,6 +422,13 @@
 }
 .freelancer-div {
     display: none;
+}
+
+
+/*Settings 2*/
+.set2-email-btn {
+    width: 30%;
+    height: 38px;
 }
 /*media-query for pg12*/
 @media (max-width: 1115px) {
