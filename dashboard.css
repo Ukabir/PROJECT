@@ -1,0 +1,254 @@
+.top-bar {
+    padding: 0 5%;
+    position: fixed;
+    z-index: 10;
+}
+.pg-top-bar {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(35,42,53);
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    position: absolute;
+    top: 50px;
+}
+body {
+    display: block;
+}
+.pg-top-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 25px;
+}
+.pg-top-cont {
+    padding: 16px;
+    width: fit-content;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+.pg-top-cont:hover {
+    background-color: #ffffff25;
+}
+.pg-top-bar .cont1 {
+    border-bottom: 4px solid;
+}
+.pg-top-bar .cont1:hover {
+    background-color: transparent;
+}
+@media (max-width: 1115px) {
+    .pg-top-bar {
+        padding: 0;
+    }
+}
+@media (max-width: 740px) {
+    .pg-top-bar {
+        display: none;
+    }
+}
+/*End of pg-top-bar codes*/
+
+
+.dashboard-pg {
+    padding: 10px 5%;
+    height: 200vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 5% 0 5%;
+}
+.post-div {
+    width: 68%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.posts {
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    box-shadow: 0.5px 0.5px 1px 1px #0000002a;
+    border-radius: 3px;
+    padding: 24px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user-info-div {
+    display: flex;
+    justify-content: space-between;
+}
+.user-info {
+    display: flex;
+    gap: 10px;
+}
+.user-img {
+    width: 48px;
+    height: 48px;
+    background-image: url(freelancer-user-img.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 3px;
+    border: 1px solid rgb(152,153,154);
+}
+.user-usern {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.user-usern a {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.1s all linear;
+    width: fit-content;
+}
+.user-usern a:hover {
+    color: rgb(41,178,254);
+    text-decoration: underline;
+}
+.user-usern p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.user-post {
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.user-post a {
+    text-decoration: none;
+    color: rgb(2,178,255);
+}
+.user-post a:hover {
+    text-decoration: underline;
+}
+.post-likes {
+    display: flex;
+    gap: 15px;
+}
+.like-icon {
+    color: #888888;
+}
+.like-icon:hover {
+    color: rgb(2,178,255);
+    cursor: pointer;
+}
+.like-icon span {
+    font-size: 14px;
+    font-weight: 400
+}
+.comment {
+    padding: 15px 0 0 0;
+    height: fit-content;
+    width: 100%;
+    border-top: 1px solid rgb(188,197,211);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.comment .user-info .user-usern {
+    width: 80%;
+}
+.person1 {
+    background-image: url(person1.webp);
+}
+.comment1 {
+    background-image: url(comment1.webp);
+}
+.comment2 {
+    background-image: url(comment2.webp);
+}
+.user-post-img {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.user-post-img img {
+    transition: 0.2s all linear;
+}
+.user-post-img:hover img {
+    transform: scale(1.2);
+}
+.subscribe {
+    width: 30%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.subs-head {
+    display: flex;
+    justify-content: space-between;
+}
+.setup-compl {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    border: 1px solid rgb(230,2,120);
+    padding: 24px;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.1s all linear;
+}
+.setup-compl p {
+    width: 70%;
+}
+.setup-compl:hover {
+    box-shadow: 0.7px 0.7px 1px 1.4px #00000041;
+}
+.balance {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-top: 1px solid rgb(188,197,211);
+    border-bottom: 1px solid rgb(188,197,211);
+}
+.balance div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.jxt-pink {
+    display: flex;
+    align-items: center;
+    color: rgb(230,2,120);
+}
+
+
+@media (max-width: 1115px) {
+    .top-bar {
+        padding: 0 10px;
+    }
+    .dashboard-pg {
+        padding: 120px 10px;
+    }
+}
+@media (max-width: 960px) {
+    .subscribe {
+        display: none;
+    }
+    .post-div {
+        width: 100%;
+    }
+}
+@media (max-width:740px) {
+    .dashboard-pg {
+        padding: 70px 10px;
+    }
+}

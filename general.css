@@ -1,0 +1,82 @@
+
+.top-bar-drop {
+    height: 474px;
+    width: 340px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 2px #00000052;
+    border-radius: 2px;
+    top: 60px;
+    right: 20px;
+    padding: 16px 24px;
+    transform: scale(0);
+    color: #000;
+    flex-direction: column;
+    align-items: start;
+    overflow-y: scroll;
+    display: flex;
+    transition: all 0.05s linear;
+    transition-timing-function: ease-out;
+    z-index: 10;
+}
+.top-logo {
+    display: flex;
+    align-items: center;
+}
+.top-logo img {
+    width: 100%;
+}
+.top-end-cont:hover .top-bar-drop {
+    transform: scale(1);
+    display: flex;
+    gap: 30px;
+}
+.top-end-cont:focus .top-bar-drop {
+    transform: scale(1);
+    display: flex;
+    gap: 30px;
+}
+.tb-drop-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+.tb-drop-cont a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.2s all linear;
+}
+.tb-drop-cont a:hover {
+    color: rgb(41,178,254);
+}
+.top-drop-chat {
+    position: relative;
+}
+.top-drop-chat .top-bar-drop {
+    right: -300%;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+.tdc-d-d {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+}
+.tdc-d-d a {
+    color: rgb(41,178,254);
+    text-decoration: none;
+}
+.tdc-d-d a:hover {
+    text-decoration: underline;
+}
+.top-d-p {
+    text-align: left;
+}
+.tdc1 .top-bar-drop{
+    height: 450px;
+    overflow-y: scroll;
+}

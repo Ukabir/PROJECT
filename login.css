@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+}
+.side1 {
+    width: 65%;
+    display: flex;
+    padding: 12vh 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-family: sans-serif;
+}
+.side1 p {
+    font-size: 20px;
+    font-weight: 700;
+}
+.logo {
+    width: 20%;
+}
+.side2 {
+    width: 35%;
+    position: fixed;
+    height: 100%;
+    background-image: url(bird.webp);
+    background-size: cover;
+    background-position: center;
+    right: 0;
+}
+.make-it {
+    width: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.logins {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.gmail-login {
+    width: 350px;
+    height: 38px;
+    background-color: #fff;
+    border: 1px solid rgb(214,223,238);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.icon-div {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+}
+.icon-div div {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: rgb(0, 116, 116);
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+}
+.icon-span {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    text-align: left;
+}
+.input {
+    width: 350px;
+    height: 38px;
+    padding: 1px 18px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid rgb(188,197,211);
+    border-radius: 3px;
+    transition: 0.5s all linear;
+}
+.input:hover, .input:focus {
+    border: 1px solid rgb(41,178,254);
+    outline: none;
+}
+.check {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+.log-btn {
+    width: 350px;
+    height: 38px;
+    color: #fff;
+    background-color: rgb(23,114,235);
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    transition: 0.1s all linear;
+}
+.log-btn:hover {
+    cursor: pointer;
+    background-color: rgb(20, 96, 196);
+}
+.another-div {
+    padding: 15px 0;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgb(188,197,211);
+    width: 350px;
+}
+.a-a-div {
+    font-size: 14px;
+    font-weight: 400;
+}
+.a-a-div a {
+    text-decoration: none;
+    color: rgb(97,114,236);
+}
+.a-a-div a:hover {
+    text-decoration: underline;
+}
+.a-a-div2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.a-a-div2 img {
+    width: 42%;
+}
+.hmm-a {
+    text-decoration: none;
+    color: rgb(97,114,236);
+}
+.hmm-a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 770px) {
+    .side2 {
+        display: none;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    .logo {
+        width: 200px;
+    }
+}
+@media (max-width: 380px) {
+    .gmail-login {
+        width: 100%;
+    }
+    .logins {
+        width: 100%;
+    }
+    .side1 {
+        width: 100%;
+    }
+    .another-div, .log-btn, .input, .check {
+        width: 100%;
+    }
+}

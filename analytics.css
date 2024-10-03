@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgb(222,222,222);
+}
+.header {
+    padding: 80px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 180px;
+}
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.header p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.body {
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+}
+.btn-bg {
+    padding: 0 5%;
+    width: 100%;
+    background-color: rgb(222,222,222);
+    display: flex;
+    gap: 10px;
+}
+.btn-bg-btn {
+    border: 0;
+    width: 170px;
+    height: 35px;
+    padding: 10px 0 ;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-bg-btn:hover {
+    color: rgb(52,160,240);
+}
+.btn-bg-btn:focus {
+    color: rgb(52,160,240);
+    border-bottom: 2px solid rgb(52,160,240);
+}
+.btn-cont {
+    height: fit-content;
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: 9px;
+    padding: 48px 5%;
+    cursor: default;
+    background-color: rgb(240,240,240);
+}
+.btn-bg-btn:focus .btn-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.stat-box {
+    width: 32%;
+    height: fit-content;
+    background-color: rgb(255,255,255);
+    margin-bottom: 25px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.226);
+}
+.stat-box-head {
+    height: 60px;
+    width: 100%;
+    padding: 0 15px;
+    border-bottom: 1px solid rgb(190,192,194);
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 700;
+    color: #000;
+}
+.stat-body {
+    padding: 16px;
+    
+}
+.stat-te {
+    border-bottom: 1px solid rgb(190,192,194);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+    gap: 20px;
+}
+.stat-te div {
+    font-size: 32px;
+    font-weight: 700;
+}
+.stat-te p {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+}
+.stat-te2 {
+    border-bottom: 0;
+}
+.stat-jp {
+    justify-content: left;
+    align-items: start;
+    padding: 16px 0;
+}
+.stat-jp .na {
+    border-left:  2px solid rgb(19,159,240);
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 24px;
+    color: #000;
+}
+.st-bc {
+    text-align: left;
+    padding: 0 16px;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.rps p {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.bids-s {
+    color: #000;
+}
+.rps a {
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(19,159,240);
+}
+.rps a:hover {
+    text-decoration: underline;
+}
+.btn-bg-btn:focus .btn-cont2 {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #000;
+    width: 100%;
+}
+.btn-cont2 h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.btn-cont2 p {
+    width: 450px;
+    font-size: 16px;
+    font-weight: 400;
+    color: RGB(77, 82, 91);
+}
+.btn-cont2-btn {
+    padding: 8px 18px;
+    background-color: rgb(0,127,237);
+    color: #fff;
+    border: 1px solid rgb(0,127,237);
+    cursor: pointer;
+}
+.btn-cont2-btn:hover{
+    background-color: rgb(44, 157, 255);
+    border: rgb(44, 157, 255) 1px solid;
+}
+
+
+@media (max-width: 1115px) {
+    .stat-box {
+        width: 45%;
+    }
+    .btn-bg {
+        padding: 0;
+        display: flex;
+        justify-content: start;
+    }
+}
+@media (max-width: 920px) {
+    .stat-box {
+        width: 90%;
+    }
+    .btn-bg-btn:focus .btn-cont {
+        justify-content: center;
+    }
+    .stat-body img {
+        width: 100%;
+    }
+    .top-end-cont1 {
+        display: none;
+    }
+    .top-end {
+        justify-content: right;
+    }
+}
+@media (max-width: 490px) {
+    .btn-cont2 h3 {
+        width: 100%;
+    }
+    .btn-cont2 p {
+        width: 100%;
+    }
+    .btn-cont2 img {
+        width: 100%;
+    }
+    
+}
+.pg12 {
+    height: fit-content;
+    background-color: rgb(18,21,27);
+    padding: 32px 7%;
+    display: flex;
+    gap: 20px;
+}
+.pg12-div {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+.pg12-div1-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 45%;
+}
+.pg12-head-img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.pg12-sd-txt-cont {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.pg12-sd-txt-cont div:hover {
+    color: rgb(86,151,236);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.pg12-head-txt {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+.pg12-div2 {
+    width: 70%;
+    justify-content: space-between;
+}
+.img-icon {
+    width: 130px;
+    height: 40px;
+}
+.pg12-socials {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 20px;
+}
+.fa-facebook:hover {
+    color: rgb(8,102,255);
+    cursor: pointer;
+}
+.fa-twitter:hover {
+    color: rgb(29,155,240);
+    cursor: pointer;
+}
+.fa-youtube:hover {
+    color: rgb(255,0,0);
+    cursor: pointer;
+}
+.fa-instagram:hover {
+    color: rgb(165, 3, 165);
+    cursor: pointer;
+}
+.pg12-footer {
+    padding: 20px 7%;
+    height: fit-content;
+    background-color: rgb(18,21,27);
+}
+.pg12-footer-box {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid rgb(35,42,53);
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    padding: 20px 10% 0 10px;
+    line-height: 20px;
+    justify-content: space-between;
+}
+.footer-box-cont p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-box-cont3 p {
+    font-size: 11px;
+    font-weight: 400;
+}
+.freelancer-div {
+    display: none;
+}

@@ -1,0 +1,339 @@
+.top-bar {
+    padding: 0;
+}
+.pg-top-bar {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(35,42,53);
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+.pg-top-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 25px;
+}
+.pg-top-cont {
+    padding: 16px;
+    width: fit-content;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+.pg-top-cont:hover {
+    background-color: #ffffff25;
+}
+.pg-top-bar .cont1 {
+    border-bottom: 4px solid;
+}
+.pg-top-bar .cont1:hover {
+    background-color: transparent;
+}
+@media (max-width: 1115px) {
+    .pg-top-bar {
+        padding: 0;
+    }
+}
+@media (max-width: 740px) {
+    .pg-top-bar {
+        display: none;
+    }
+}
+/*End of pg-top-bar codes*/
+
+.cover-img {
+    width: 100%;
+    height: 200px;
+    background-image: url(cover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 15px 25px;
+    position: relative;
+    z-index: -10;
+}
+.cover-btn-cont {
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+}
+.cover-btn {
+    height: 54px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(61,74,93);
+    border: 1px solid rgb(188,197,211);
+    border-radius: 2px;
+    background-color: rgb(252,252,253);
+    cursor: pointer;
+    transition: 0.05s all linear;
+}
+.cover-btn:hover, .edit:hover {
+    background-color: #e6e6e6;
+}
+.body-cont {
+    padding: 0 35px;
+}
+.body-cont-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    height: 70px;
+}
+.img-box {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 0;
+    background-image: url(CROPPED_profile_logo_PNWUX_b15de9285ca8e8663b3a62f403ed40e6.webp);
+    background-position: center;
+    background-size: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(188,197,211);
+}
+.edit {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgb(188,197,211);
+}
+.img-box2 {
+    width: 82%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border-bottom: 1px solid rgb(188,197,211);
+    display: flex;
+}
+.img-box2 button {
+    padding: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(18,21,27);
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid rgb(61,74,93);
+}
+.img-box2 :nth-child(2) {
+    border-bottom: 0px;
+}
+.img-box2 :nth-child(2):hover {
+    border-bottom: 2px solid rgba(61, 74, 93, 0.39);
+}
+.sect1 {
+    display: flex;
+    padding: 30px 0;
+}
+.body-sect1 {
+    width: 70%;
+}
+.sect-div1 {
+    font-size: 41px;
+    font-weight: 300;
+}
+.sect-div2 {
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+.sect-txt {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.dum-txt {
+    padding: 15px 0;
+    line-height: 25px;
+}
+.body-sect2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+    width: 30%;
+}
+.bs2-div1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.bs2-div1 button {
+    height: 54px;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid rgb(188,197,211);
+    background-color: #fff;
+    color: rgb(61,74,93);
+}
+.bs2-div2 {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    width: 80%;
+    height: 100px;
+    box-shadow: 0px 0px 1px 0px #00000094;
+    font-size: 16px;
+    font-weight: 500;
+    position: sticky;
+}
+.sect2 .sect-div1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+.port-f-div {
+    font-size: 15px;
+    font-family: 700;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+.port-f-div:hover {
+    background-color: #0000001c;
+}
+.port-f-div a {
+    color: #000;
+}
+.jxt-hgt {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.jxt-hgt img {
+    width: 10%;
+}
+.sect-div1 div select {
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 400;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+.sel-div {
+    width: fit-content;
+}
+.sel-div:hover {
+    background-color: transparent;
+}
+.sel-label {
+    font-size: 20px;
+    font-weight: 400;
+}
+.jxt-hgt2 {
+    padding: 30px 0;
+    height: fit-content;
+}
+.jxt-hgt2 img {
+    width: 20%;
+
+}
+.jxt-flx {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.exp-page p {
+    font-size: 32px;
+    font-weight: 700;
+}
+.sect4-bs1 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.bs2-div2-img {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.cover-btn span {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .cover-img {
+        height: 350px;
+    }
+    .img-box {
+        height: 250px;
+        width: 250px;
+        background-size: cover;
+    }
+    .img-box2 {
+        width: 70%;
+    }
+    .img-box2 button {
+        width: fit-content;
+    }
+    .body-cont {
+        justify-content: space-between;
+    }
+    .cover-btn-cont {
+        flex-direction: column;
+        display: flex;
+        gap: 10px;
+    }
+    .cover-btn {
+        height: 37px;
+    }
+    .body-sect2 {
+        display: none;
+    }
+    .body-sect1 {
+        width: 100%;
+    }
+}
+@media (max-width: 740px) {
+    .cover-img {
+        height: 150px;
+    }
+    .img-box {
+        height: 150px;
+        width: 150px;
+        background-size: cover;
+    }
+    .img-box2 {
+        display: none;
+    }
+    .cover-btn span {
+        display: inline;
+    }
+    .cover-btn {
+        padding: 0 15px;
+    }
+    .cover-btn p {
+        display: none;
+    }
+    .cover-btn-cont {
+        flex-direction: row;
+    }
+    .sect-div1 span {
+        display: none;
+    }
+}
